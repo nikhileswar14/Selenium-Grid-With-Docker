@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo01Suite">
+    <parameter name="browser" value="firefox"></parameter>
+    <parameter name="hubURL" value="http://localhost:4444/wd/hub">
+    </parameter>
+    <test name="Multiple_Browser_Test">
+        <parameter name="applicationURL" value="https://www.google.com/">
+        </parameter>
+        <classes>
+            <class name="MultipleBrowsersTest"/>
+        </classes>
+    </test>
+
+</suite>
